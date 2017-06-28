@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <Popover className={`song-heart`}>
-        <i className="icon ion-ios-heart">ra ra</i>
+        <i className="icon ion-ios-heart"></i>
         <div>
           <p>Test ok</p>
         </div>

@@ -3,7 +3,7 @@ var DIST_PATH = path.resolve(__dirname, 'dist');
 var SOURCE_PATH = path.resolve(__dirname, 'src');
 
 module.exports = {
-  entry: SOURCE_PATH + '/app/main.js', // entry file where bundler start the bundling process
+  entry: SOURCE_PATH + '/app/main.js', // entry file where bundle start the bundling process
   output: {
     path: DIST_PATH,
     filename: 'app.dist.js',
