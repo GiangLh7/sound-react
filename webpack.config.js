@@ -5,9 +5,8 @@ var SOURCE_PATH = path.resolve(__dirname, 'src');
 module.exports = {
   entry: SOURCE_PATH + '/app/main.js', // entry file where bundle start the bundling process
   output: {
-    path: DIST_PATH,
-    filename: 'app.dist.js',
-    publicPath: '/src/app/'
+    path: SOURCE_PATH + '/server/public/',
+    filename: 'js/main.js',
   },
   module: {
     loaders: [
@@ -19,7 +18,8 @@ module.exports = {
           {
             presets:['react']
           }
-      }
+      },
+      { test: /\.scss$/, loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'] },
     ]
   }
 }

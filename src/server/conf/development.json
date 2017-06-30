@@ -1,0 +1,64 @@
+{
+  "hapi": {
+    "conf": {
+      "debug": {
+        "request": [
+          "error",
+          "uncaught"
+        ]
+      }
+    }
+  },
+
+  "appConfig": {
+    "image": {
+      "supportedTypes": ["jpg", "jpeg","png"],
+      "maxSize": "10MB",
+      "path": "https://s3-ap-southeast-1.amazonaws.com/dev.images.your.rentals/",
+
+      "profile": {
+        "minWidth": 300,
+        "minHeight": 300
+      },
+
+      "listing": {
+        "minWidth": 640,
+        "minHeight": 480,
+        "minRecommendedWidth": 1024,
+        "minRecommendedHeight": 768
+      },
+
+      "brand": {
+        "largeExtension" : "340x70",
+        "smallExtension" : "220x44"
+      }
+    },
+    "mainCurrency": "EUR",
+    "booking": {
+      "commissionPercent": 5
+    },
+    "pinCodeExpiredTime": 7200,
+    "numberAfterDecimals": 2,
+    "description" : {
+      "headlineMin": 20,
+      "headlineMax": 80,
+      "summaryMin": 80,
+      "summaryMax": 300,
+      "descriptionMin": 400,
+      "descriptionMax": 10000
+    },
+
+    "cleaningBasis": {
+      "included": "included",
+      "mandatory": "mandatory",
+      "optional": "optional"
+    },
+
+    "gtmTrackingId": "GTM-PZNMNL",
+
+    "notificationServer": "https://pushtest.your.rentals"
+
+  },
+  "NODE_ENV": "development",
+  "googleMapAPIKey": "AIzaSyANKPGJ4MMIyXwcc1AdGSmQuJOuQwUPpRE"
+}

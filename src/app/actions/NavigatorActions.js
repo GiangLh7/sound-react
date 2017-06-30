@@ -22,6 +22,6 @@ export function navigateBack(e) {
 
 export function navigateTo(route, shouldPushState = true) {
   return (dispatch, getState) => {
-    
+  
   }
 }

@@ -4,12 +4,16 @@ import Popover from '../components/Popover';
 class App extends Component {
   render() {
     return (
-      <Popover className={`song-heart`}>
-        <i className="icon ion-ios-heart"></i>
-        <div>
-          <p>Test ok</p>
-        </div>
-      </Popover>
+      <div>
+        <button className="button orange">OK</button>
+        <Popover className={`song-heart`}>
+          <i className="icon ion-ios-heart">Playlist</i>
+          <div>
+            <p>Test ok</p>
+          </div>
+        </Popover>
+      </div>
+      
     );
   }
 }
